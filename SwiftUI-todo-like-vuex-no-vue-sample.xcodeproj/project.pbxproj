@@ -13,6 +13,9 @@
 		1AC3DBA126247CD00086F9EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC3DBA026247CD00086F9EC /* Preview Assets.xcassets */; };
 		1AC3DBAC26247CD00086F9EC /* SwiftUI_todo_like_vuex_no_vue_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3DBAB26247CD00086F9EC /* SwiftUI_todo_like_vuex_no_vue_sampleTests.swift */; };
 		1AC3DBB726247CD00086F9EC /* SwiftUI_todo_like_vuex_no_vue_sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3DBB626247CD00086F9EC /* SwiftUI_todo_like_vuex_no_vue_sampleUITests.swift */; };
+		1AC3DBC826247CFC0086F9EC /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3DBC726247CFC0086F9EC /* Store.swift */; };
+		1AC3DBCE26247DED0086F9EC /* AddTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3DBCD26247DED0086F9EC /* AddTodo.swift */; };
+		1AC3DBD626247E650086F9EC /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3DBD526247E650086F9EC /* TodoList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		1AC3DBB226247CD00086F9EC /* SwiftUI-todo-like-vuex-no-vue-sampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-todo-like-vuex-no-vue-sampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC3DBB626247CD00086F9EC /* SwiftUI_todo_like_vuex_no_vue_sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_todo_like_vuex_no_vue_sampleUITests.swift; sourceTree = "<group>"; };
 		1AC3DBB826247CD00086F9EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AC3DBC726247CFC0086F9EC /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		1AC3DBCD26247DED0086F9EC /* AddTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodo.swift; sourceTree = "<group>"; };
+		1AC3DBD526247E650086F9EC /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 			children = (
 				1AC3DB9926247CCD0086F9EC /* SwiftUI_todo_like_vuex_no_vue_sampleApp.swift */,
 				1AC3DB9B26247CCD0086F9EC /* ContentView.swift */,
+				1AC3DBC726247CFC0086F9EC /* Store.swift */,
+				1AC3DBCC26247DCF0086F9EC /* Components */,
 				1AC3DB9D26247CD00086F9EC /* Assets.xcassets */,
 				1AC3DBA226247CD00086F9EC /* Info.plist */,
 				1AC3DB9F26247CD00086F9EC /* Preview Content */,
@@ -128,6 +136,15 @@
 				1AC3DBB826247CD00086F9EC /* Info.plist */,
 			);
 			path = "SwiftUI-todo-like-vuex-no-vue-sampleUITests";
+			sourceTree = "<group>";
+		};
+		1AC3DBCC26247DCF0086F9EC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1AC3DBCD26247DED0086F9EC /* AddTodo.swift */,
+				1AC3DBD526247E650086F9EC /* TodoList.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC3DBD626247E650086F9EC /* TodoList.swift in Sources */,
+				1AC3DBC826247CFC0086F9EC /* Store.swift in Sources */,
 				1AC3DB9C26247CCD0086F9EC /* ContentView.swift in Sources */,
 				1AC3DB9A26247CCD0086F9EC /* SwiftUI_todo_like_vuex_no_vue_sampleApp.swift in Sources */,
+				1AC3DBCE26247DED0086F9EC /* AddTodo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +439,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-todo-like-vuex-no-vue-sample/Preview Content\"";
-				DEVELOPMENT_TEAM = 3Z7SZTTG3V;
+				DEVELOPMENT_TEAM = 9S3UXHYP65;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-todo-like-vuex-no-vue-sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -427,7 +447,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.ensan.SwiftUI-todo-like-vuex-no-vue-sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ensan.SwiftUI-todo-like-vuex-no-vue-sample2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,7 +461,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-todo-like-vuex-no-vue-sample/Preview Content\"";
-				DEVELOPMENT_TEAM = 3Z7SZTTG3V;
+				DEVELOPMENT_TEAM = 9S3UXHYP65;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-todo-like-vuex-no-vue-sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -449,7 +469,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.ensan.SwiftUI-todo-like-vuex-no-vue-sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ensan.SwiftUI-todo-like-vuex-no-vue-sample2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
