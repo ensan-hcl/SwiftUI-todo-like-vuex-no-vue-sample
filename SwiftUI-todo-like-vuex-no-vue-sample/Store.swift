@@ -13,7 +13,7 @@ struct TodoItem {
 }
 
 class TodoState: ObservableObject {
-    @Published var todoList: [TodoItem] = []
+    @Published fileprivate(set) var todoList: [TodoItem] = []
 }
 
 struct AppState {
@@ -23,6 +23,5 @@ struct AppState {
 
     mutating func addTodo(title: String) {
         self.todoState.todoList.append(.init(title: title, completed: false))
-        print(self.todoState.todoList)
     }
 }
